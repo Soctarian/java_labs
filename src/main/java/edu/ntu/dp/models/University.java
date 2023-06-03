@@ -1,6 +1,7 @@
 package edu.ntu.dp.models;
 
 import java.util.Collection;
+import java.util.Objects;
 
 public class University {
     private Collection<Faculty> faculties;
@@ -31,5 +32,15 @@ public class University {
     public void setFaculties(Collection<Faculty> faculties)
     {
         this.faculties = faculties;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof University)) return false;
+        University that = (University) o;
+        return Objects.equals(universityName, that.universityName) &&
+                Objects.equals(rector, that.rector) &&
+                Objects.equals(faculties, that.faculties);
     }
 }

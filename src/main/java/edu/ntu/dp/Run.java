@@ -14,82 +14,61 @@ public class Run {
     {
         University university = new University();
         UniversityCreator universityCreator = new UniversityCreator();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("DO YOU WANNA CREATE DEFAULT UNIVERSITY UNIT? (y/n): ");
 
-        String method = scanner.nextLine();
+        Collection<Student> students = createStudents(universityCreator);
+        Collection<Group> groups = new ArrayList<Group>();
+        Collection<Department> departments = new ArrayList<Department>();
+        Collection<Faculty> faculties = new ArrayList<Faculty>();
 
-        if (Objects.equals(method, "y")) {
-            university = universityCreator.createDefaultUniversity();
+        Group testGroup1, testGroup2 = new Group();
+        testGroup1 = universityCreator.createGroup("124-20-1", getHead(), students);
+        testGroup2 = universityCreator.createGroup("124-20-2", getHead(), students);
+        groups.add(testGroup1);
+        groups.add(testGroup2);
 
-        } else if (Objects.equals(method, "n")) {
-            Collection<Student> students = createStudents(universityCreator);
-            Collection<Group> groups = new ArrayList<Group>();
-            Collection<Department> departments = new ArrayList<Department>();
-            Collection<Faculty> faculties = new ArrayList<Faculty>();
+        Department department = universityCreator.createDepartment("Department of software and computer systems", getHead(), groups);
+        departments.add(department);
 
-            Group testGroup1, testGroup2 = new Group();
-            testGroup1 = universityCreator.createGroup("124-20-1", getHead(), students);
-            testGroup2 = universityCreator.createGroup("124-20-2", getHead(), students);
-            groups.add(testGroup1);
-            groups.add(testGroup2);
+        Faculty faculty = universityCreator.createFaculty("FIT", getHead(), departments);
+        faculties.add(faculty);
 
-            Department department = universityCreator.createDepartment("Department of software and computer systems", getHead(), groups);
-            departments.add(department);
+        university = universityCreator.createUniversity("Dnipro University of Technology", getHead(), faculties);
 
-            Faculty faculty = universityCreator.createFaculty("FIT", getHead(), departments);
-            faculties.add(faculty);
-
-            university = universityCreator.createUniversity("Dnipro University of Technology", getHead(), faculties);
-        }
-        else {
-            System.out.println("METHOD ERROR");
-        }
 
         return university;
 
     }
 
-    private Human createHuman() {
-        System.out.println("ENTER HUMAN INFO: FIRST NAME, SECOND NAME, PATRONYMIC, GENDER (1,2) ");
-        Scanner scan = new Scanner(System.in);
-        String firstName = scan.nextLine();
-        String secondName = scan.nextLine();
-        String fatherName = scan.nextLine();
-        int gender = scan.nextInt() - 1;
+    private Human createDefaultHuman() {
 
         Human human = new Human();
 
-        human.setFirstName(firstName);
-        human.setSecondName(secondName);
-        human.setFatherName(fatherName);
-        human.setGender(Gender.values()[gender]);
+        human.setFirstName("FIRSTNAME");
+        human.setSecondName("SECOND");
+        human.setFatherName("PATRONYMIC");
+        human.setGender(Gender.values()[0]);
 
         return human;
     }
 
-    private Collection<Human> getHumans() {
+    private Collection<Human> getHumans(int count) {
         Collection<Human> humans = new ArrayList<Human>();
-        System.out.println("ENTER NUMBER OF HUMANS: ");
-        Scanner scan = new Scanner(System.in);
-        int count = scan.nextInt();
         for (int i = 0; i < count; i++) {
-            humans.add(createHuman());
+            humans.add(createDefaultHuman());
         }
-
         return humans;
     }
 
     private Human getHead() {
         Human human = new Human();
-        human = createHuman();
+        human = createDefaultHuman();
         return human;
     }
 
     private Collection<Student> createStudents(UniversityCreator universityCreator) {
         Collection<Student> students = new ArrayList<Student>();
 
-        Collection<Human> humans = getHumans();
+        Collection<Human> humans = getHumans(2);
 
         for (Human human: humans) {
             students.add(universityCreator.create(
