@@ -4,30 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e143549-4794-40d0-b968-875723f40c0f" name="Changes" comment="Lab4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/DataBaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/StudentSearcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/SudentCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/resourses/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/view/DisplayStudents.java" afterDir="false" />
+    <list default="true" id="8e143549-4794-40d0-b968-875723f40c0f" name="Changes" comment="Lab5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/Run.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/DepartmentCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/FacultyCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/GroupCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/IHumanCreatable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/JsonManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/StudentCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/controllers/UniversityCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/Faculty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/Gender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/Human.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ntu/dp/models/University.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/ntu/dp/UnitTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +51,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Univer\3 курс\Жаба\M.O.EmetsLabs\src\main\java\edu\ntu\dp\resourses" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ntu.dp.Main" />
@@ -153,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685792151686</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lab5">
+      <created>1685803769350</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685803769350</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +174,7 @@
     <MESSAGE value="Lab2" />
     <MESSAGE value="Lab3" />
     <MESSAGE value="Lab4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4" />
+    <MESSAGE value="Lab5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab5" />
   </component>
 </project>
